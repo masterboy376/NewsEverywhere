@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {Link} from "react-router-dom";
 
-export default class Navbar extends Component {
-  render() {
-    return (
-      <div>
-        <nav className="navbar navbar-dark bg-dark fixed-top">
+export default function Navbar() {
+  return (
+    <>
+       <nav className="navbar fixed-top navbar-dark bg-dark fixed-top">
           <div className="container-fluid">
             <Link className="navbar-brand" to="#">NewsEverywhere</Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -47,7 +46,7 @@ export default class Navbar extends Component {
             </div>
           </div>
         </nav>
-      </div>
-    )
-  }
+    </>
+  )
 }
+
